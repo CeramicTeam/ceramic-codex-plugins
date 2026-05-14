@@ -1,0 +1,7 @@
+{
+  "name": "ceramic-search",
+  "version": "1.0.0",
+  "description": "High quality web search for AI agents using Ceramic",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}
