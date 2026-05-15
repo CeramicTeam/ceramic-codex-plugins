@@ -33,9 +33,19 @@ Find `ceramic-search` under the **Ceramic AI Plugins** marketplace. Open it and 
 
 ### Step 4 — Authenticate with Ceramic
 
-Codex will prompt you to authenticate. Ceramic uses **WorkOS OAuth** — you will be redirected to sign in/create an account. On success, an access token is issued containing your `org_id`, which is used to authorize requests to the Ceramic MCP server.
+Open a **new terminal outside of any Codex session** and run:
 
-### Step 5 — Start using it
+```bash
+codex mcp login ceramic-search
+```
+
+Open the printed authorization URL in your browser and complete the **WorkOS OAuth** flow — sign in or create an account. The browser will show "Authentication complete. You may close this window." and your terminal will confirm `Successfully logged in to MCP server 'ceramic-search'`.
+
+> **Important:** do not run `codex mcp login` as a command inside a Codex session. Codex's sandbox blocks the OAuth callback server from binding to its port, causing the login to hang silently.
+
+Sessions last a maximum of **7 days**, with a **2-day inactivity timeout**. When your session expires, re-run `codex mcp login ceramic-search` from a terminal outside of Codex.
+
+### Step 5 — Start a new Codex session and use it
 
 The `search` skill is now active in every Codex session. You do not need to invoke it manually — the agent calls it automatically whenever it needs current information from the web.
 
