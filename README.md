@@ -29,17 +29,17 @@ Open the plugin directory:
 - **Codex app** — click **Plugins** in the sidebar
 - **Codex CLI** — start a session with `codex`, then type `/plugins`
 
-Find `ceramic-search` under the **Ceramic AI Plugins** marketplace. Open it and select **Install plugin**.
+Find `ceramic-search` under the **Ceramic AI Plugins** marketplace. Open it and select **Install plugin**. Codex should automatically open the **WorkOS OAuth** authorization page in your browser — sign in or create an account. The browser will show "Authentication complete. You may close this window."
 
-### Step 4 — Authenticate with Ceramic
+### Step 4 — Authenticate manually (fallback)
 
-Open a **new terminal outside of any Codex session** and run:
+If the browser did not open automatically during install, run the following from a **new terminal outside of any Codex session**:
 
 ```bash
 codex mcp login ceramic-search
 ```
 
-Open the printed authorization URL in your browser and complete the **WorkOS OAuth** flow — sign in or create an account. The browser will show "Authentication complete. You may close this window." and your terminal will confirm `Successfully logged in to MCP server 'ceramic-search'`.
+Open the printed authorization URL in your browser and complete the flow. Your terminal will confirm `Successfully logged in to MCP server 'ceramic-search'`.
 
 > **Important:** do not run `codex mcp login` as a command inside a Codex session. Codex's sandbox blocks the OAuth callback server from binding to its port, causing the login to hang silently.
 
