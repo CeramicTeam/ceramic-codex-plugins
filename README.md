@@ -41,8 +41,6 @@ codex mcp login ceramic-search
 
 Open the printed authorization URL in your browser and complete the flow. Your terminal will confirm `Successfully logged in to MCP server 'ceramic-search'`.
 
-> **Important:** do not run `codex mcp login` as a command inside a Codex session. Codex's sandbox blocks the OAuth callback server from binding to its port, causing the login to hang silently.
-
 Sessions last a maximum of **7 days**, with a **2-day inactivity timeout**. When your session expires, re-run `codex mcp login ceramic-search` from a terminal outside of Codex.
 
 ### Step 5 — Start a new Codex session and use it
