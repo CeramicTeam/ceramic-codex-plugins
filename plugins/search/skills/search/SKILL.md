@@ -1,9 +1,9 @@
 ---
 name: search
-description: Search the web using Ceramic and return a summary with cited sources.
+description: Search the web using Ceramic and return a summary with cited sources. Use this skill whenever you need current or external context to answer accurately — including when the user asks you to search, when your knowledge may be outdated, or when the task requires facts you cannot reliably recall.
 ---
 
-Use this skill whenever you need current or external context to answer accurately — including when the user asks you to search, when your knowledge may be outdated, or when the task requires facts you cannot reliably recall. Follow these steps:
+ Follow these steps:
 
 1. **Rewrite the query** for Ceramic's lexical (keyword-based) search engine before calling the tool. Ceramic matches exact keywords — it does not interpret natural language or synonyms automatically. Generate a keyword query of **2–10 words**.
    - Extract specific entities, topics, locations, and dates from the user's request
