@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "description": "High quality web search for AI agents using Ceramic",
   "skills": "./skills/",
-  "mcpServers": "./.mcp.json"
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "logo": "./assets/logo.png"
+  }
 }
