@@ -1,5 +1,15 @@
 # Ceramic Codex Plugins
 
+> [!IMPORTANT]
+> This plugin has moved to [CeramicTeam/agent-skills](https://github.com/CeramicTeam/agent-skills). New installs should use that repo. See the [Agent Skill docs](https://docs.ceramic.ai/api/search/agent-skill) for all install options.
+>
+> Already installed from this repo? Remove this marketplace and add the new one. Your installed plugin updates the next time you start Codex:
+>
+> ```bash
+> codex plugin marketplace remove ceramic-ai
+> codex plugin marketplace add CeramicTeam/agent-skills
+> ```
+
 Codex plugins for [Ceramic AI](https://docs.ceramic.ai). Install once, use across every project.
 
 ## Plugins
